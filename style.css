@@ -8,6 +8,8 @@ body {
     font-size: 0.5rem;
     font-family: monospace, sans-serif;
     color: #d42d2d;
+
+    background-color: #888888;
 }
 
 *, *::after, *::before {
@@ -39,11 +41,11 @@ header figure {
 }
 
 .header-title {
-    margin-right: 4vw;
+    margin-right: 2vw;
 
     white-space: nowrap;
 
-    font-size: 1.3vw;
+    font-size: 1.6vw;
 }
 
 
@@ -58,7 +60,7 @@ header figure {
 }
 
 .navigation-sections {
-    margin-right: 10vw;
+    margin-right: 3vw;
 
     white-space: nowrap;
 
@@ -66,9 +68,9 @@ header figure {
 }
 
 .navigation a {
-    padding: 0 0.5em;
+    padding: 0 0.2em;
 
-    font-size: 1.3vw;
+    font-size: 1.6vw;
     font-weight: bold;
     color: #d42d2d;
     text-decoration: none;
@@ -108,7 +110,7 @@ header figure {
 .telegram {
     border-radius: 50%;
 
-    transition: background 2s ease-in-out .1s;
+    transition: background 0.3s ease-in-out .1s;
 }
 .telegram:hover {
     border: 3px dotted #000000;
@@ -118,7 +120,7 @@ header figure {
 .instagram {
     border-radius: 50%;
 
-    transition: background 2s ease-in-out .1s;
+    transition: background 0.3s ease-in-out .1s;
 }
 
 .instagram:hover {
@@ -129,7 +131,7 @@ header figure {
 .email {
     border-radius: 10px;
 
-    transition: background 2s ease-in-out .1s;
+    transition: background 0.3s ease-in-out .1s;
 }
 
 .email:hover {
@@ -140,7 +142,7 @@ header figure {
 .discord {
     border-radius: 50%;
 
-    transition: background 2s ease-in-out .1s;
+    transition: background 0.3s line.1s;
 }
 
 .discord:hover {
@@ -182,7 +184,7 @@ header figure {
         padding: 0.5rem 0;
         width: 100%;
 
-        font-size: 3em;
+        font-size: 2.6em;
         text-align: center;
         vertical-align: middle;
     }
@@ -207,7 +209,7 @@ header figure {
     .navigation-sections a {
         padding: 0.5rem 0;
 
-        font-size: 3em;
+        font-size: 2.6em;
     }
 
     .navigation-sections a:nth-of-type(odd) {
@@ -230,7 +232,7 @@ header figure {
     .navigation-tel a {
         padding: 0.5rem 0;
 
-        font-size: 3em;
+        font-size: 2.6em;
     }
 
     .navigation-tel a:last-of-type {
