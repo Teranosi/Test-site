@@ -1,0 +1,254 @@
+html {
+    font-size: 15px;
+}
+
+body {
+    margin: 0;
+
+    font-size: 0.5rem;
+    font-family: monospace, sans-serif;
+    color: #d42d2d;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+
+/* header */
+
+header {
+    width: 100%;
+    padding: 2em 0;
+
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+header figure {
+    margin: 0 2vw;
+}
+
+.header-logo {
+    width: 6vw;
+    height: auto;
+
+    border: 3px dotted #ff0000;
+    border-radius: 100%;
+}
+
+.header-title {
+    margin-right: 4vw;
+
+    white-space: nowrap;
+
+    font-size: 1.3vw;
+}
+
+
+/* navigation */
+
+.navigation {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.navigation-sections {
+    margin-right: 10vw;
+
+    white-space: nowrap;
+
+    display: flex;
+}
+
+.navigation a {
+    padding: 0 0.5em;
+
+    font-size: 1.3vw;
+    font-weight: bold;
+    color: #d42d2d;
+    text-decoration: none;
+
+    transition: color 0.5s linear;
+}
+
+.navigation a:hover {
+    color: #bc2525;
+    text-decoration: underline;
+}
+
+.navigation-tel {
+    padding: 0 0.5em;
+    margin-right: 2vw;
+
+    white-space: nowrap;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation-media {
+    display: flex;
+}
+
+.navigation-media svg{
+    width: 2em;
+    height: auto;
+}
+
+
+.navigation-media a:hover {
+    text-decoration: none;
+}
+
+.telegram {
+    border-radius: 50%;
+
+    transition: background 2s ease-in-out .1s;
+}
+.telegram:hover {
+    border: 3px dotted #000000;
+    background-color: white;
+}
+
+.instagram {
+    border-radius: 50%;
+
+    transition: background 2s ease-in-out .1s;
+}
+
+.instagram:hover {
+    border: 3px dotted #000000;
+    background-color: white;
+}
+
+.email {
+    border-radius: 10px;
+
+    transition: background 2s ease-in-out .1s;
+}
+
+.email:hover {
+    border: 3px dotted #000000;
+    background-color: white;
+}
+
+.discord {
+    border-radius: 50%;
+
+    transition: background 2s ease-in-out .1s;
+}
+
+.discord:hover {
+    border: 3px dotted #000000;
+    background-color: white;
+}
+
+
+/* media */
+
+@media (max-width: 900px) {
+    header {
+        padding: 0;
+
+        font-size: 0.5em;
+
+        align-items: center;
+        flex-direction: column;
+    }
+
+    header figure {
+        width: 100%;
+        margin: 0;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #333232;
+    }
+
+    .header-logo {
+        margin: 0.5rem 0;
+
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .header-title {
+        margin: 0;
+        padding: 0.5rem 0;
+        width: 100%;
+
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 0;
+
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navigation-sections {
+        margin: 0;
+        width: 100%;
+
+        background-color: black;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navigation-sections a {
+        padding: 0.5rem 0;
+    }
+
+    .navigation-sections a:nth-of-type(odd) {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        background-color: #333232;
+    }
+
+    .navigation-tel {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+
+        background-color: black;
+        align-items: center;
+    }
+
+    .navigation-tel a {
+        padding: 0.5rem 0;
+    }
+
+    .navigation-tel a:last-of-type {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        background-color: #333232;
+    }
+
+    .navigation-media {
+        padding: 0.5rem 0;
+        width: 100%;
+
+        background-color: black;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
