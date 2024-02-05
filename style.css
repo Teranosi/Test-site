@@ -1,3 +1,13 @@
+/*---------------
+1.header
+2.navigation
+3.main
+4.media
+5.header-media
+6.navigation-media
+7.main-media
+---------------*/
+
 html {
     font-size: 15px;
 }
@@ -6,10 +16,10 @@ body {
     margin: 0;
 
     font-size: 0.5rem;
-    font-family: monospace, sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: #d42d2d;
 
-    background-color: #888888;
+    background: repeat center/10% url(media/white-pattern.avif);
 }
 
 *, *::after, *::before {
@@ -17,7 +27,7 @@ body {
 }
 
 
-/* header */
+/* 1.header */
 
 header {
     width: 100%;
@@ -41,7 +51,7 @@ header figure {
 }
 
 .header-title {
-    margin-right: 2vw;
+    margin-right: 7vw;
 
     white-space: nowrap;
 
@@ -49,7 +59,7 @@ header figure {
 }
 
 
-/* navigation */
+/* 2.navigation */
 
 .navigation {
     height: 100%;
@@ -60,7 +70,7 @@ header figure {
 }
 
 .navigation-sections {
-    margin-right: 3vw;
+    margin-right: 7vw;
 
     white-space: nowrap;
 
@@ -85,7 +95,7 @@ header figure {
 
 .navigation-tel {
     padding: 0 0.5em;
-    margin-right: 2vw;
+    margin-right: 3vw;
 
     white-space: nowrap;
 
@@ -110,7 +120,7 @@ header figure {
 .telegram {
     border-radius: 50%;
 
-    transition: background 0.3s ease-in-out .1s;
+    transition: background 0.3s linear;
 }
 .telegram:hover {
     border: 3px dotted #000000;
@@ -118,9 +128,9 @@ header figure {
 }
 
 .instagram {
-    border-radius: 50%;
+    border-radius: 20px;
 
-    transition: background 0.3s ease-in-out .1s;
+    transition: background 0.3s linear;
 }
 
 .instagram:hover {
@@ -131,7 +141,7 @@ header figure {
 .email {
     border-radius: 10px;
 
-    transition: background 0.3s ease-in-out .1s;
+    transition: background 0.3s linear;
 }
 
 .email:hover {
@@ -142,7 +152,7 @@ header figure {
 .discord {
     border-radius: 50%;
 
-    transition: background 0.3s line.1s;
+    transition: background 0.3s linear;
 }
 
 .discord:hover {
@@ -151,11 +161,61 @@ header figure {
 }
 
 
-/* media */
+/* 3.main */
+
+main {
+    margin: 2vw 4vw;
+
+    color: black;
+
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    display: flex;
+}
+
+.main-title {
+    margin: 2vw 0 2vw 0;
+
+    font-size: 1.5vw;
+}
+
+.main-text {
+    margin: 0 10vw 2vw 0;
+
+    font-size: 1.2vw;
+    text-align: justify;
+}
+
+.main-image {
+    width: 20vw;
+
+    border-radius: 20px;
+    box-shadow: 1px 5px 5px black;
+}
+
+main > div > figure {
+    margin: 0;
+    width: fit-content;
+}
+
+main > div > figure:first-of-type {
+    margin: 2vw 0 3vw 0;
+}
+
+main > div > figure:last-of-type {
+    margin: 3vw 0 2vw 0;
+}
+
+
+/* 4.media */
 
 @media (max-width: 900px) {
+
+
+    /* 5.header-media */
     header {
         padding: 0;
+        height: 26.3rem;
 
         align-items: center;
         flex-direction: column;
@@ -184,11 +244,13 @@ header figure {
         padding: 0.5rem 0;
         width: 100%;
 
-        font-size: 2.6em;
+        font-size: 1.3rem;
         text-align: center;
         vertical-align: middle;
     }
 
+
+    /* 6.navigation-media */
     .navigation {
         width: 100%;
         height: 0;
@@ -209,7 +271,7 @@ header figure {
     .navigation-sections a {
         padding: 0.5rem 0;
 
-        font-size: 2.6em;
+        font-size: 1.3rem;
     }
 
     .navigation-sections a:nth-of-type(odd) {
@@ -232,7 +294,7 @@ header figure {
     .navigation-tel a {
         padding: 0.5rem 0;
 
-        font-size: 2.6em;
+        font-size: 1.3rem;
     }
 
     .navigation-tel a:last-of-type {
@@ -254,7 +316,40 @@ header figure {
     }
 
     .navigation-media svg {
-        width: 2rem;
+        width: 2.5rem;
+    }
+
+
+    /* 7.main-media */
+
+    main {
+        flex-direction: column;
+    }
+
+    .main-title {
+        font-size: 1.2rem;
+    }
+
+    .main-text {
+        margin-right: 0;
+
+        font-size: 1rem;
+    }
+
+    .main-image {
+        width: 90vw;
+    }
+
+    main > div > figure {
+        margin: 2vw 1vw 3vw 1vw;
+    }
+
+    main > div > figure:first-of-type {
+        margin: 2vw 1vw 3vw 1vw;
+    }
+
+    main > div > figure:last-of-type {
+        margin: 3vw 1vw 2vw 1vw;
     }
 }
 
